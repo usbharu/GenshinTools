@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ResinCounter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ResinCounter_jar</output-path>
+    <root id="archive" name="ResinCounter.jar">
+      <element id="module-output" name="ResinCounter" />
+    </root>
+  </artifact>
+</component>
