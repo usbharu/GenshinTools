@@ -106,7 +106,7 @@ public class ResinCounter {
 		gbc.weighty = 1.0;
 		panel1.add(resin, gbc);
 		time = new JLabel();
-		time.setText("Time・時間");
+		time.setText("Time(minute)・時間(分)");
 		gbc = new GridBagConstraints();
 		gbc.gridx = 2;
 		gbc.gridy = 0;

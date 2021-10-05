@@ -60,7 +60,7 @@
               <gridbag weightx="1.0" weighty="1.0"/>
             </constraints>
             <properties>
-              <text value="Time・時間"/>
+              <text value="Time(minute)・時間(分)"/>
             </properties>
           </component>
         </children>
