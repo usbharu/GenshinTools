@@ -1,4 +1,4 @@
-package usbharu.genshintools;
+package usbharu.genshintools.resin;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +14,7 @@ import java.text.NumberFormat;
  * @since 1.0.0
  */
 public class ResinCounter {
-	JPanel contentPane;
+	public JPanel contentPane;
 	private JFormattedTextField resinInput;
 	private JFormattedTextField timeInput;
 	private JLabel resin;

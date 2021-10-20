@@ -1,4 +1,4 @@
-package usbharu.genshintools;
+package usbharu.genshintools.resin;
 
 /**
  * 樹脂の数と時間を計算する
