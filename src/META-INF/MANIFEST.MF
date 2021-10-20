@@ -1,3 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: usbharu.resincal.Main
-
+Main-Class: main.usbharu.resincal.Main

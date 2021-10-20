@@ -1,4 +1,4 @@
-package usbharu.resincal;
+package usbharu.genshintools;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,7 +9,7 @@ import java.text.NumberFormat;
 /**
  * 樹脂の数と時間を計算するguiのコントローラー
  *
- * @author usbharu
+ * @author main.usbharu
  * @version 1.0.0
  * @since 1.0.0
  */
