@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ResinCounter.iml" filepath="$PROJECT_DIR$/ResinCounter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenshiinTools.iml" filepath="$PROJECT_DIR$/GenshinTools.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,8 @@
 package usbharu.genshintools.resin;
 
+import usbharu.genshintools.gui.IContentPane;
+import usbharu.genshintools.main.Main;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -13,13 +16,14 @@ import java.text.NumberFormat;
  * @version 1.0.0
  * @since 1.0.0
  */
-public class ResinCounter {
+public class ResinCounter implements IContentPane {
 	public JPanel contentPane;
 	private JFormattedTextField resinInput;
 	private JFormattedTextField timeInput;
 	private JLabel resin;
 	private JLabel time;
 	private JLabel allow;
+	private JButton backButton;
 
 	public ResinCounter() {
 		$$$setupUI$$$();
@@ -53,6 +57,17 @@ public class ResinCounter {
 				}
 			}
 		});
+		backButton.addActionListener(new ActionListener() {
+			/**
+			 * Invoked when an action occurs.
+			 *
+			 * @param e the event to be processed
+			 */
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Main.main();
+			}
+		});
 	}
 
 	/**
@@ -67,8 +82,11 @@ public class ResinCounter {
 		contentPane = new JPanel();
 		contentPane.setLayout(new BorderLayout(0, 0));
 		final JPanel panel1 = new JPanel();
-		panel1.setLayout(new GridBagLayout());
+		panel1.setLayout(new BorderLayout(0, 0));
 		contentPane.add(panel1, BorderLayout.CENTER);
+		final JPanel panel2 = new JPanel();
+		panel2.setLayout(new GridBagLayout());
+		panel1.add(panel2, BorderLayout.CENTER);
 		allow = new JLabel();
 		allow.setText("↔");
 		GridBagConstraints gbc;
@@ -76,7 +94,7 @@ public class ResinCounter {
 		gbc.gridx = 1;
 		gbc.gridy = 1;
 		gbc.weighty = 1.0;
-		panel1.add(allow, gbc);
+		panel2.add(allow, gbc);
 		resinInput.setColumns(10);
 		gbc = new GridBagConstraints();
 		gbc.gridx = 0;
@@ -86,7 +104,7 @@ public class ResinCounter {
 		gbc.anchor = GridBagConstraints.WEST;
 		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5, 5, 5, 5);
-		panel1.add(resinInput, gbc);
+		panel2.add(resinInput, gbc);
 		timeInput.setColumns(10);
 		gbc = new GridBagConstraints();
 		gbc.gridx = 2;
@@ -96,7 +114,7 @@ public class ResinCounter {
 		gbc.anchor = GridBagConstraints.WEST;
 		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5, 5, 5, 5);
-		panel1.add(timeInput, gbc);
+		panel2.add(timeInput, gbc);
 		resin = new JLabel();
 		resin.setText("Resin・樹脂");
 		gbc = new GridBagConstraints();
@@ -104,7 +122,7 @@ public class ResinCounter {
 		gbc.gridy = 0;
 		gbc.weightx = 1.0;
 		gbc.weighty = 1.0;
-		panel1.add(resin, gbc);
+		panel2.add(resin, gbc);
 		time = new JLabel();
 		time.setText("Time(minute)・時間(分)");
 		gbc = new GridBagConstraints();
@@ -112,7 +130,10 @@ public class ResinCounter {
 		gbc.gridy = 0;
 		gbc.weightx = 1.0;
 		gbc.weighty = 1.0;
-		panel1.add(time, gbc);
+		panel2.add(time, gbc);
+		backButton = new JButton();
+		backButton.setText("back");
+		panel1.add(backButton, BorderLayout.NORTH);
 	}
 
 	/**
@@ -125,5 +146,15 @@ public class ResinCounter {
 	private void createUIComponents() {
 		resinInput = new JFormattedTextField(NumberFormat.getNumberInstance());
 		timeInput = new JFormattedTextField(NumberFormat.getNumberInstance());
+	}
+
+	@Override
+	public JPanel getContentPane() {
+		return contentPane;
+	}
+
+	@Override
+	public String getName() {
+		return "Resin";
 	}
 }

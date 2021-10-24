@@ -9,6 +9,7 @@ public class MainForm {
 	public JPanel contentPane;
 	private JButton resinCal;
 	private JButton shieldButton;
+	JPanel mainPanel;
 
 	public MainForm() {
 		resinCal.addActionListener(new ActionListener() {
@@ -50,8 +51,13 @@ public class MainForm {
 	 * @noinspection ALL
 	 */
 	private void $$$setupUI$$$() {
+		mainPanel = new JPanel();
+		mainPanel.setLayout(new BorderLayout(0, 0));
 		contentPane = new JPanel();
 		contentPane.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		contentPane.setMinimumSize(new Dimension(640, 480));
+		contentPane.setPreferredSize(new Dimension(640, 480));
+		mainPanel.add(contentPane, BorderLayout.NORTH);
 		resinCal = new JButton();
 		resinCal.setText("Resin");
 		contentPane.add(resinCal);
@@ -64,7 +70,7 @@ public class MainForm {
 	 * @noinspection ALL
 	 */
 	public JComponent $$$getRootComponent$$$() {
-		return contentPane;
+		return mainPanel;
 	}
 
 }
