@@ -1,4 +1,4 @@
-package usbharu.genshintools.resin;
+package usbharu.genshintoolsplugin.resin;
 
 import usbharu.genshintools.gui.IContentPane;
 import usbharu.genshintools.main.Main;

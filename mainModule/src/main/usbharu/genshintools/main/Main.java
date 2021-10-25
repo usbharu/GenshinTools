@@ -2,8 +2,6 @@ package usbharu.genshintools.main;
 
 import usbharu.genshintools.gui.IContentPane;
 import usbharu.genshintools.plugin.PluginLoader;
-import usbharu.genshintools.resin.ResinCounter;
-import usbharu.genshintools.shield.CharacterShieldCal;
 
 import javax.swing.*;
 import java.awt.*;
@@ -40,17 +38,6 @@ public class Main {
 		frame.setVisible(true);
 	}
 
-	public static void createResinCounter() {
-		frame.setContentPane(new ResinCounter().contentPane);
-		frame.revalidate();
-		frame.repaint();
-	}
-
-	public static void createShieldCounter() {
-		frame.setContentPane(new CharacterShieldCal().getContentPane());
-		frame.revalidate();
-		frame.repaint();
-	}
 
 	public static void main(){
 		frame.setContentPane(mainForm.contentPane);

@@ -1,15 +1,12 @@
-package usbharu.genshintools.shield.character;
+package usbharu.genshintoolsplugin.shield.character;
 
 import usbharu.genshintools.gui.IContentPane;
-import usbharu.genshintools.shield.ShieldCal;
+import usbharu.genshintoolsplugin.shield.ShieldCal;
 
 import javax.swing.*;
-import javax.swing.plaf.FontUIResource;
-import javax.swing.text.StyleContext;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class Noelle implements IContentPane {

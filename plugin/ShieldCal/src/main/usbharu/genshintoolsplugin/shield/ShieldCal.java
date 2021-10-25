@@ -1,4 +1,4 @@
-package usbharu.genshintools.shield;
+package usbharu.genshintoolsplugin.shield;
 
 import java.util.ResourceBundle;
 

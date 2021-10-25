@@ -14,20 +14,7 @@
           <preferredSize width="640" height="480"/>
         </properties>
         <border type="none"/>
-        <children>
-          <component id="c1ef5" class="javax.swing.JButton" binding="resinCal">
-            <constraints/>
-            <properties>
-              <text value="Resin"/>
-            </properties>
-          </component>
-          <component id="27798" class="javax.swing.JButton" binding="shieldButton" default-binding="true">
-            <constraints/>
-            <properties>
-              <text value="Shield"/>
-            </properties>
-          </component>
-        </children>
+        <children/>
       </grid>
     </children>
   </grid>

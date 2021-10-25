@@ -1,9 +1,9 @@
-package usbharu.genshintools.shield;
+package usbharu.genshintoolsplugin.shield;
 
 import usbharu.genshintools.gui.IContentPane;
 import usbharu.genshintools.main.Main;
-import usbharu.genshintools.shield.character.Diona;
-import usbharu.genshintools.shield.character.Noelle;
+import usbharu.genshintoolsplugin.shield.character.Diona;
+import usbharu.genshintoolsplugin.shield.character.Noelle;
 
 import javax.swing.*;
 import java.awt.*;

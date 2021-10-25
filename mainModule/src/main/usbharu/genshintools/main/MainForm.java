@@ -2,38 +2,13 @@ package usbharu.genshintools.main;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class MainForm {
 	public JPanel contentPane;
-	private JButton resinCal;
-	private JButton shieldButton;
 	JPanel mainPanel;
 
 	public MainForm() {
-		resinCal.addActionListener(new ActionListener() {
-			/**
-			 * Invoked when an action occurs.
-			 *
-			 * @param e the event to be processed
-			 */
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Main.createResinCounter();
-			}
-		});
-		shieldButton.addActionListener(new ActionListener() {
-			/**
-			 * Invoked when an action occurs.
-			 *
-			 * @param e the event to be processed
-			 */
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Main.createShieldCounter();
-			}
-		});
+
 	}
 
 	{
@@ -58,12 +33,6 @@ public class MainForm {
 		contentPane.setMinimumSize(new Dimension(640, 480));
 		contentPane.setPreferredSize(new Dimension(640, 480));
 		mainPanel.add(contentPane, BorderLayout.NORTH);
-		resinCal = new JButton();
-		resinCal.setText("Resin");
-		contentPane.add(resinCal);
-		shieldButton = new JButton();
-		shieldButton.setText("Shield");
-		contentPane.add(shieldButton);
 	}
 
 	/**
