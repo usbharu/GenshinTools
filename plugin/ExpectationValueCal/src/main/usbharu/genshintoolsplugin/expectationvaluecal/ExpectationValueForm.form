@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="usbharu.genshintoolsplugin.expectationvaluecal.ExpectationValueForm">
+  <grid id="27dc6" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="df2d0" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="2031a">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="8f085" binding="listPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </scrollpane>
+          <component id="f3fe5" class="javax.swing.JLabel" binding="description">
+            <constraints border-constraint="North"/>
+            <properties>
+              <text value="攻撃力、会心率、会心ダメージの組み合わせで期待値を算出します。"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="91274" class="javax.swing.JButton" binding="backButton">
+        <constraints border-constraint="North"/>
+        <properties>
+          <text value="back"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
