@@ -95,12 +95,19 @@ public class ExpectationValueForm implements IContentPane {
 					listPanel.revalidate();
 					break;
 				}
+			} else {
+				listPanel.remove(inputPanelList.get(j));
+				inputPanelList.remove(j);
+				listPanel.repaint();
+				listPanel.revalidate();
+				break;
 			}
 		}
 	}
 
 	class InputPanel extends JPanel {
 		private final ExpectationValueForm expectationValueForm;
+		private final JButton closeButton = new JButton("×");
 		private final JLabel atkLabel = new JLabel("ATK");
 		private final JLabel criticalRateLabel = new JLabel("CriticalRate");
 		private final JLabel criticalDamageLabel = new JLabel("CriticalDamage");
@@ -114,6 +121,13 @@ public class ExpectationValueForm implements IContentPane {
 		private final JFormattedTextField criticalDamageInput = new JFormattedTextField(criticalDamage);
 
 		{
+			closeButton.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					wasUse = false;
+					expectationValueForm.recalculation();
+				}
+			});
 			atkInput.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
@@ -138,6 +152,7 @@ public class ExpectationValueForm implements IContentPane {
 					expectationValueForm.recalculation();
 				}
 			});
+			add(closeButton);
 			add(atkLabel);
 			add(atkInput);
 			add(criticalRateLabel);
