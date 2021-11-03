@@ -30,7 +30,7 @@ public class ShieldCal {
 
 	public static int shieldStrength(ResourceBundle resourceBundle,String talentsName, int base, int talentsLevel, int shieldIncreases) {
 		float talentsPer = Float.parseFloat(resourceBundle.getString(talentsName+"level" + talentsLevel + "Per"));
-		int talents = Integer.parseInt(resourceBundle.getString(talentsName+"level" + talentsLevel));
+		int talents = (int) Float.parseFloat(resourceBundle.getString(talentsName+"level" + talentsLevel));
 		float shieldEffect = shieldIncreases/100f+1;
 		float talentsPerFloat = talentsPer/100f;
 		float baseShieldStrength = baseShieldStrength(base,talentsPerFloat,talents);
