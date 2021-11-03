@@ -90,7 +90,7 @@ public class Noelle implements IContentPane {
 	}
 
 	void setShield() {
-		baseShieldInput.setText(String.valueOf(shield));
+		baseShieldInput.setText(String.valueOf(shield * 1.5));
 		float finalShieldStrength = shield;
 		if (twoGeoCheck.isSelected()) {
 			finalShieldStrength *= 1.5;

@@ -4,6 +4,7 @@ import usbharu.genshintools.gui.IContentPane;
 import usbharu.genshintools.main.Main;
 import usbharu.genshintoolsplugin.shield.character.Diona;
 import usbharu.genshintoolsplugin.shield.character.Noelle;
+import usbharu.genshintoolsplugin.shield.character.Thoma;
 
 import javax.swing.*;
 import java.awt.*;
@@ -87,6 +88,7 @@ public class CharacterShieldCal implements IContentPane {
 		model = new DefaultComboBoxModel<>();
 		model.addElement(new Diona());
 		model.addElement(new Noelle());
+		model.addElement(new Thoma());
 		characterSelect = new JComboBox<>(model);
 	}
 
